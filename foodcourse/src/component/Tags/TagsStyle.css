@@ -1,4 +1,4 @@
-#content #tags {
+#tags {
     display: flex;
     align-items: center;
     height: 56px;
@@ -11,7 +11,7 @@
     margin-bottom: 25px;
 }
 
-#content #tags .-item{
+#tags .-item{
     display: flex;
     height: 25px;
     padding: 5px 12px;
@@ -21,10 +21,10 @@
     border-radius: 15px;
     font-size: 13px;
 }
-#content #tags .-item:hover{
+#tags .-item:hover{
     background-color: #e5e5e5;
 }
-#content #tags .-item.-active{
+#tags .-item.-active{
     background-color: #000 !important;
     color: #fff;
 }
