@@ -1,22 +1,25 @@
+import { Link, useLocation } from 'react-router-dom';
 import './TagsStyle.css'
 
 function Tags(){
+    const location = useLocation();
+
     return (
         <section id="tags">
-            <a href="" className="-item -active">
+            <Link to="/" className={`-item ${location.pathname === '/' ? '-active' : ''}`}>
                 ทั้งหมด
-            </a>
-            <a href="" className="-item">
+            </Link>
+            <Link to="/breakfast" className={`-item ${location.pathname === '/breakfast' ? '-active' : ''}`}>
                 อาหารเช้า
-            </a>
-            <a href="" className="-item">
+            </Link>
+            <Link to="/vegetable" className={`-item ${location.pathname === '/vegetable' ? '-active' : ''}`}>
                 เมนูผัก
-            </a>
-            <a href="" className="-item">
+            </Link>
+            <Link to="/dinner" className={`-item ${location.pathname === '/dinner' ? '-active' : ''}`}>
                 อาหารเย็น
-            </a>
+            </Link>
         </section>
-    )
+    );
 }
 
 export default Tags;
