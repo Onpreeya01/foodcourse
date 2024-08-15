@@ -1,14 +1,25 @@
 import Tags from "../Tags/Tags";
 import "./ContentStyle.css"
+import { useNavigate } from 'react-router-dom';
 
 function Content(){
+    const navigate = useNavigate();
+
+    const handleImageClick = (name) => {
+        // เปลี่ยนเส้นทางไปยังเส้นทางที่สอดคล้องกับชื่อ
+        navigate(`/${name}`);
+    };
+
     return (
         <section id="content">
             <Tags></Tags>
             <section id="the-cards">
                 <div className="card">
                     <div className="-thumb">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLF14wfYejK3g96LLf73ZVrY9_D3DjpMAEqg&s"/>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLF14wfYejK3g96LLf73ZVrY9_D3DjpMAEqg&s"
+                        alt="ขาหมู"
+                        onClick={() => handleImageClick('ขาหมู')}
+                        />
                     </div>
                     <div className="-name">
                         ขาหมู

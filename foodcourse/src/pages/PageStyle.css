@@ -1,0 +1,62 @@
+#kha-moo-page .card{
+    text-align: center;
+
+}
+
+.card .-thumb img{
+    width: 100%; 
+    height: auto; 
+    max-width: 320px; 
+    border-radius: 8px; 
+}
+.detail{
+    display: flex;
+    justify-content: space-around; /* จัดให้มีช่องว่างเท่ากันทั้งด้านซ้ายและขวา */
+    align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
+    margin-bottom: 20px; /* เพิ่มช่องว่างด้านล่างถ้าจำเป็น */
+    font-size: 18px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.info-item svg {
+    margin-right: 8px;
+    color: #000; /* เปลี่ยนสีของไอคอน */
+    font-size: 24px; /* ปรับขนาดไอคอน */
+}
+
+.calorie-circles {
+    display: flex;
+    justify-content: center; /* จัดให้อยู่กลางแนวนอน */
+    margin-bottom: 20px;      /* เพิ่มช่องว่างด้านล่าง */
+}
+
+.circle {
+    width: 100px;             /* ขยายขนาดวงกลม */
+    height: 100px;
+    border-radius: 50%;       /* ทำให้เป็นวงกลม */
+    margin: 0 15px;           /* เพิ่มช่องว่างระหว่างวงกลม */
+    display: flex;
+    align-items: center;      /* จัดแนวข้อความให้อยู่กลางแนวตั้ง */
+    justify-content: center;  /* จัดแนวข้อความให้อยู่กลางแนวนอน */
+    color: white;             /* กำหนดสีข้อความภายในวงกลม */
+    font-size: 14px;          /* ขนาดตัวอักษร */
+    text-align: center;       /* จัดข้อความให้อยู่กลาง */
+    padding: 10px;            /* เพิ่มช่องว่างภายในวงกลม */
+}
+
+
+
+.ingredients {
+    padding-left: 30%;  /* เลื่อนข้อความทั้งหมดไปทางขวาให้เริ่มที่ 30% ของหน้า */
+    padding-top: 10px;      /* เพิ่มระยะห่างภายในจากขอบบนของ `.ingredients` */
+}
+
+.cooking {
+    padding-left: 30%;  /* เลื่อนข้อความทั้งหมดไปทางขวาให้เริ่มที่ 30% ของหน้า */
+    padding-top: 20px;      /* เพิ่มระยะห่างภายในจากขอบบนของ `.ingredients` */
+}

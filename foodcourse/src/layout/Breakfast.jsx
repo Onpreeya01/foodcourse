@@ -5,7 +5,7 @@ import './Breakfast.css';
 function Breakfast() {
     return (
         <section id="break-fast">
-            <Nav />
+            <Nav/>
             <Tags/>
             <section id="the-cards">
                 <div className="card">

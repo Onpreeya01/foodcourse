@@ -1,11 +1,12 @@
 #the-cards {
-    display: grid;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    /* display: grid;
+    
     grid-template-columns: auto auto auto auto;
     grid-gap: 70px;
-    /* padding: 10px 50px; */
+
     padding-bottom: 30px;
-    justify-content: center;
+    justify-content: center; */
+    text-align: center;
 }
 .card .-thumb img{
     width: 100%; 
@@ -16,4 +17,8 @@
 .card .-name {
     font-size: 17px;
     font-weight: 500;
+}
+
+#content .-thumb{
+    cursor: pointer;
 }
