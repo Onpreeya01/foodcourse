@@ -19,7 +19,7 @@
     color: #000;
     align-items: center;
     border-radius: 15px;
-    font-size: 13px;
+    font-size: 20px;
 }
 #tags .-item:hover{
     background-color: #e5e5e5;

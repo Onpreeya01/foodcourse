@@ -50,9 +50,6 @@ function Page() {
             <div className="ingredients">
                 <h4>วัตถุดิบ</h4>
                 <p>1.</p>
-                <p>2.</p>
-                <p>3.</p>
-                <p>4.</p>
             </div>
 
             <div className="cooking">

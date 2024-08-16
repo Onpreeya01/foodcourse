@@ -1,6 +1,6 @@
 #kha-moo-page .card{
     text-align: center;
-
+    font-size: 23px;
 }
 
 .card .-thumb img{
@@ -14,7 +14,7 @@
     justify-content: space-around; /* จัดให้มีช่องว่างเท่ากันทั้งด้านซ้ายและขวา */
     align-items: center; /* จัดให้อยู่ตรงกลางในแนวตั้ง */
     margin-bottom: 20px; /* เพิ่มช่องว่างด้านล่างถ้าจำเป็น */
-    font-size: 18px;
+    font-size: 25px;
 }
 
 .info-item {
@@ -44,7 +44,7 @@
     align-items: center;      /* จัดแนวข้อความให้อยู่กลางแนวตั้ง */
     justify-content: center;  /* จัดแนวข้อความให้อยู่กลางแนวนอน */
     color: white;             /* กำหนดสีข้อความภายในวงกลม */
-    font-size: 14px;          /* ขนาดตัวอักษร */
+    font-size: 20px;          /* ขนาดตัวอักษร */
     text-align: center;       /* จัดข้อความให้อยู่กลาง */
     padding: 10px;            /* เพิ่มช่องว่างภายในวงกลม */
 }
@@ -54,9 +54,11 @@
 .ingredients {
     padding-left: 30%;  /* เลื่อนข้อความทั้งหมดไปทางขวาให้เริ่มที่ 30% ของหน้า */
     padding-top: 10px;      /* เพิ่มระยะห่างภายในจากขอบบนของ `.ingredients` */
+    font-size: 20px;
 }
 
 .cooking {
     padding-left: 30%;  /* เลื่อนข้อความทั้งหมดไปทางขวาให้เริ่มที่ 30% ของหน้า */
     padding-top: 20px;      /* เพิ่มระยะห่างภายในจากขอบบนของ `.ingredients` */
+    font-size: 20px;
 }
