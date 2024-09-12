@@ -2,8 +2,8 @@
     display: flex;
     align-items: center;
     height: 56px;
-    padding: 12px 150px;
-    gap: 30px;
+    padding: 1.5vw 8vw;
+    gap: 2vw;
     width: 100%;
     position: sticky;
     top: 0;
@@ -14,12 +14,13 @@
 #tags .-item{
     display: flex;
     height: 25px;
-    padding: 5px 12px;
+    padding: 0.3rem 1rem;
     background-color: #f2f2f2;
     color: #000;
     align-items: center;
     border-radius: 15px;
-    font-size: 20px;
+    font-size: 1.2rem;
+    text-decoration: none; /* เอาเส้นใต้ออก */
 }
 #tags .-item:hover{
     background-color: #e5e5e5;
@@ -27,4 +28,34 @@
 #tags .-item.-active{
     background-color: #000 !important;
     color: #fff;
+}
+
+/* เพื่อให้การปรับขนาดสมูทมากขึ้น เราสามารถใช้เทคนิค fluid typography 
+หรือ fluid spacing โดยใช้หน่วยเช่น vw (viewport width) 
+หรือ rem แทนการใช้ค่าคงที่แบบ px และปรับค่าการเปลี่ยนแปลงทีละน้อย 
+เพื่อให้การขยับดูนุ่มนวลขึ้น */
+@media (max-width: 768px) {
+    #tags {
+        padding: 2vw 6vw;  
+        gap: 1.5vw;  
+    }
+
+    #tags .-item {
+        font-size: 1rem;  
+        padding: 0.25rem 0.75rem;
+    }
+}
+
+
+@media (max-width: 480px) {
+    #tags {
+        flex-wrap: wrap;  
+        padding: 1.5vw 5vw;
+        gap: 1vw;
+    }
+
+    #tags .-item {
+        font-size: 0.9rem; 
+        padding: 0.2rem 0.5rem;
+    }
 }
