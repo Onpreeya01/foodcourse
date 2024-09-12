@@ -1,6 +1,7 @@
 import Tags from "../Tags/Tags";
 import "./ContentStyle.css"
 import { useNavigate } from 'react-router-dom';
+import Nav from "../Nav/Nav";
 
 function Content(){
     const navigate = useNavigate();
@@ -12,6 +13,7 @@ function Content(){
 
     return (
         <section id="content">
+            <Nav></Nav>
             <Tags></Tags>
             <section id="the-cards">
                 <div className="card">
