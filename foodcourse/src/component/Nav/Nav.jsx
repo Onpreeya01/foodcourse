@@ -5,11 +5,11 @@ import './NavStyle.css'
 function Nav(){
     return (
     <section id="nav">
-        <div className="-brand">
+        {/* <div className="-brand">
             <div className="-ham">
                 <img src="https://via.placeholder.com/30x30" alt=""/>
             </div>
-        </div>
+        </div> */}
         <div className="-center">
             <div className="-search">
                 <div className="-search-box">
